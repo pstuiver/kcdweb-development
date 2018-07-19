@@ -1,0 +1,10 @@
+# Basic options
+title: KidzCanDurban Website
+athor: Paul
+email: pstuiverx@gmail.com
+description: Updated 20 July 2018
+github_username: pstuiver
+
+# Build settings
+markdown: kramdown
+
