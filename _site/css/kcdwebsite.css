@@ -3,7 +3,7 @@
 .dynafont {
     max-width: 1280px;
     font-family: "Verdana", "Arial", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-align: left;
     line-height: 1.5;
     background: white;
@@ -365,23 +365,9 @@ li:first-child {
     text-align: center;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 501px) {
     .dynafont {
-        font-size: 13px;
-        text-align: left;
-    }
-}
-
-@media screen and (min-width: 460px) {
-    .dynafont {
-        font-size: 14px;
-        text-align: left;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    .dynafont {
-        font-size: 15px;
+        font-size: 16px;
         text-align: left;
     }
     .header-grid {
@@ -420,7 +406,7 @@ li:first-child {
     }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 701px) {
     .dynafont {
         font-size: 16px;
     }
@@ -442,7 +428,7 @@ li:first-child {
     }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
     .dynafont {
         font-size: 17px;
         max-width: 1280px;
@@ -479,7 +465,7 @@ li:first-child {
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1101px) {
     .dynafont {
         font-size: 18px;
         max-width: 1280px;
