@@ -11,7 +11,7 @@
     margin: 5.75em auto 0em auto;
 }
 
-/* This span is to compensate for fixed Navbar at top of page. A div selected from the nav-bar that would have been displayed behind the fixed Navbar will now be displayed below the Navbar */
+/* This span is to compensate for fixed Navbar at top of page. A div selected from the nav-bar that would have been displayed behind the fixed Navbar will  be displayed below the Navbar */
 
 div {
     position: relative;
