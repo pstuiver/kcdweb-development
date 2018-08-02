@@ -448,7 +448,7 @@
      }
      .navbar i {
          display: contents;
-         display: visible;
+         visibility: visible;
      }
      .navbar a {
          margin-right: 2.0em;
