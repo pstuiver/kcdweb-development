@@ -27,25 +27,6 @@
 
  .grid-item {}
 
- /* MEDIA QUERIES FOR FLEX SUPPORT*/
-
- /* @supports (display: flex) {
-     .grid {
-         display: flex;
-         flex-wrap: wrap;
-         justify-content: center;
-     }
-    .grid:last-child {
-     padding-bottom: auto;
-     }
-     .grid-item {
-         flex: 1 0 20em;
-         max-width: 35em;
-         width: auto;
-    }
-}
-*/
-
  /* This <div> span is to compensate for fixed Navbar at top of page. A div navigated to from the nav-bar that would have been displayed behind the fixed Navbar will now be displayed below the Navbar */
 
  div {
@@ -399,6 +380,25 @@
      height: 600px;
  }
 
+ /* MEDIA QUERIES FOR FLEX SUPPORT*/
+
+ /* @supports (display: flex) {
+     .grid {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+     }
+    .grid:last-child {
+     padding-bottom: auto;
+     }
+     .grid-item {
+         flex: 1 0 20em;
+         max-width: 35em;
+         width: auto;
+    }
+}
+*/
+
  /* MEDIA QUERIES FOR GRID SUPPORT*/
 
  /*@supports (display:grid) {
@@ -418,6 +418,15 @@
 */
 
  /* MEDIA QUERIES FOR SCREEN WIDTH*/
+
+ @media screen and (min-width: 100px) {
+     body {
+         font-size: 12px;
+     }
+     .navbar a {
+         margin-right: 0.5em;
+     }
+ }
 
  @media screen and (min-width: 361px) {
      body {
@@ -439,6 +448,7 @@
      }
      .navbar i {
          display: contents;
+         display: visible;
      }
      .navbar a {
          margin-right: 2.0em;
