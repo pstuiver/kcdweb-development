@@ -447,8 +447,10 @@
          visibility: visible;
      }
      .navbar i {
-         display: contents;
+         position: relative;
          visibility: visible;
+         display: contents;
+
      }
      .navbar a {
          margin-right: 2.0em;
