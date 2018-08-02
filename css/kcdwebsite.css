@@ -146,12 +146,13 @@ li:first-child {
 
 /* HOME PAGE */
 
-.homepage {
+.homepage,
+.homepage-extra {
     text-align: center;
 }
 
 .homepage-fallback {
-    margin: 1.5em
+    margin: 1.5em;
 }
 
 .homepage-padding {
@@ -392,7 +393,7 @@ form button {
         justify-content: space-around;
     }
     .grid:last-child {
-        padding-bottom: auto;
+        padding-bottom: 1em;
     }
     .grid-item {
         flex: 1 1 20em;
@@ -466,9 +467,9 @@ form button {
         margin-right: 2.0em;
     }
     .homepage-extra {
-        width: 15%;
+        width: 16.5%;
         height: 100%;
-        float: left
+        float: left;
     }
     .homepage-extra img {
         width: 100%;
