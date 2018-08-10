@@ -1,1 +1,1 @@
-# www.KidzCanDurban.com  Website
+# www.kidzcandurban.com website
