@@ -7,14 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="favicon-32x32.png">
     <link href="css/kcdwebsite-min.css" rel="stylesheet" type="text/css">
-    <!-- <link href="Fontawesome/css/all.css" rel="stylesheet">-->
-    <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="Fontawesome/css/all.css">
-
     <noscript>
-  <link rel="stylesheet" href="Fontawesome/css/all.css">
-</noscript>
-
-
+<link rel="stylesheet" type="text/css" href="Fontawesome/css/all.css" />
+    </noscript>
 </head>
 
 <body>
@@ -302,6 +297,19 @@
             </div>
         </div>
     </main>
+
+    <script>
+        (function() {
+            var font = document.createElement('link');
+            font.type = 'text/css';
+            font.rel = 'stylesheet';
+            font.href = 'Fontawesome/css/all.css';
+            var s = document.getElementsByTagName('link')[0];
+            s.parentNode.insertBefore(font, s);
+        })();
+
+    </script>
+
 </body>
 
 </html>
