@@ -240,6 +240,8 @@ li:first-child {
     text-align: center;
     padding: 0.75em;
     margin: -0.5em 0.75em 0 0.75em;
+    stroke: none;
+    fill: currentColor;
 }
 
 .multicon-newlogo p {
@@ -313,7 +315,7 @@ li:first-child {
 
 .contact-svg {
     width: 2em;
-    stroke: currentColor;
+    stroke: none;
     fill: currentColor;
 }
 
