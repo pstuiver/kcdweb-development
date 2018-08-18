@@ -350,7 +350,7 @@ form button {
 .footer-wrap {
     text-align: center;
     display: inline-block;
-    height: 4.5em;
+    height: auto;
     width: 100%;
     margin: 0;
     padding: 0;
