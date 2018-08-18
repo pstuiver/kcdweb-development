@@ -1,0 +1,493 @@
+body {
+    text-align: left;
+    max-width: 1280px;
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0;
+    background: #ffffff;
+    color: #003ef8;
+}
+
+main {
+    z-index: 1;
+    position: absolute;
+    max-width: 1280px;
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 5.25em 0 0 0;
+}
+
+.grid {}
+
+.grid:last-child {
+    padding-bottom: 1em;
+}
+
+.grid-item {
+    padding: 1em;
+}
+
+/* This <div> span is to compensate for fixed Navbar at top of page. A div navigated to from the nav-bar that would have been displayed behind the fixed Navbar will now be displayed below the Navbar */
+
+div {
+    position: relative;
+}
+
+#home,
+#about,
+#services,
+#topics,
+#news,
+#contact {
+    position: absolute;
+    top: -5.5em;
+}
+
+img {
+    border-radius: 1em;
+}
+
+.blue-text-white-bg {
+    color: #003ef8;
+    fill: #003ef8;
+    stroke: #003ef8;
+    background: #ffffff;
+}
+
+.blue-text-liteblue-bg {
+    color: #003ef8;
+    fill: #003ef8;
+    stroke: #003ef8;
+    background: #bdd2e5;
+}
+
+.white-text-blue-bg {
+    color: #ffffff;
+    fill: #ffffff;
+    stroke: none;
+    background: #003ef8;
+}
+
+.blue-text-blue-bg {
+    background: #003ef8;
+    color: #003ef8;
+}
+
+.fas,
+.fab {
+    font-size: 2.5em;
+    color: inherit;
+    margin-top: 0.15em;
+}
+
+a,
+a:visited {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.a-deco {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+li:first-child {
+    margin-top: -0.75em;
+}
+
+/* HEADER */
+
+.header {
+    z-index: 10;
+    max-width: 1280px;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+    background: white;
+}
+
+.header img {
+    position: relative;
+    visibility: hidden;
+    display: none;
+    width: 140px;
+    margin-left: 0.2em;
+    border-radius: 0;
+    float: left;
+}
+
+.header-l-text {
+    display: inline;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.header-s-text {
+    display: inline;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* NAVBAR */
+
+.navbar {
+    margin-top: 0.2em;
+    min-height: 2em;
+    height: 100%;
+    padding-top: 0.5em;
+    text-align: right;
+    border-bottom: 2px solid #b5b5b5;
+}
+
+.navbar a {
+    margin-right: 0.5em;
+}
+
+.navbar i {
+    font-size: 1em;
+    display: none;
+}
+
+/* HOME PAGE */
+
+.homepage,
+.homepage-extra {
+    text-align: center;
+}
+
+.homepage-fallback {
+    margin: 1.5em;
+}
+
+.homepage-padding {
+    padding-top: 0.5em;
+}
+
+.homepage-extra img {
+    display: none;
+}
+
+.homepage a {
+    color: #ffffff;
+    background: #003ef8;
+    text-decoration: none;
+    font-weight: bold;
+    height: 1.5em;
+    width: 8em;
+    padding: 0.75em;
+    border-radius: 2em;
+    border: solid 2px darkblue;
+    box-shadow: 7px 7px 4px darkblue;
+}
+
+/* SECTION HEADER */
+
+.section-head {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid;
+}
+
+.section-head i {
+    font-size: 1em;
+}
+
+/* MULTICON */
+
+.multicon-body-2col,
+.multicon-body-3col {
+    margin: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 2em;
+}
+
+.multicon-body-2col,
+.multicon-body-3col {
+    max-width: 35em;
+    height: 100%;
+}
+
+.multicon-logo {
+    height: 4.5em;
+    text-align: center;
+    padding: 0.75em;
+    margin: 0.75em 0.75em 0 0.75em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 2em;
+}
+
+.multicon-newlogo {
+    height: 6em;
+    text-align: center;
+    margin: 0.75em;
+    border-style: solid;
+    border-width: 0.2em;
+    border-radius: 2em;
+}
+
+.multicon-newlogo svg {
+    width: 4em;
+    text-align: center;
+    padding: 0.75em;
+    margin: -0.5em 0.75em 0 0.75em;
+}
+
+.multicon-newlogo p {
+    text-align: center;
+    margin-top: -2.75em;
+}
+
+
+.multicon-content-services {
+    height: auto;
+    padding: 0 1em;
+    margin: 0 0.75em 1em 0.75em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.multicon-content-about,
+.multicon-content-topics {
+    padding: 0 0.5em;
+    margin: 0 0.75em 1em 0.75em;
+    font-weight: normal;
+    text-align: left;
+}
+
+.multicon-readmore {
+    height: 1.5em;
+    width: 8em;
+    margin: 1.25em auto 0.5em auto;
+    padding: 0.75em;
+    text-align: center;
+    border-radius: 2em;
+}
+
+.multicon-button {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blue-text-white-bg .multicon-readmore {
+    border: solid 2px #003ef8;
+    box-shadow: 7px 7px 4px grey;
+}
+
+.blue-text-blue-bg .multicon-readmore {
+    border: solid 2px darkblue;
+    box-shadow: 7px 7px 4px darkblue;
+}
+
+/* CONTACT SECTION */
+
+.ic-phone {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z" ></path ></svg>');
+}
+
+.ic-envelope {
+    background-image: url('data:image/svg+xml;charset=utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" > <path d="M32 12.679v14.179c0 1.571-1.286 2.857-2.857 2.857h-26.286c-1.571 0-2.857-1.286-2.857-2.857v-14.179c0.536 0.589 1.143 1.107 1.804 1.554 2.964 2.018 5.964 4.036 8.875 6.161 1.5 1.107 3.357 2.464 5.304 2.464h0.036c1.946 0 3.804-1.357 5.304-2.464 2.911-2.107 5.911-4.143 8.893-6.161 0.643-0.446 1.25-0.964 1.786-1.554zM32 7.429c0 2-1.482 3.804-3.054 4.893-2.786 1.929-5.589 3.857-8.357 5.804-1.161 0.804-3.125 2.446-4.571 2.446h-0.036c-1.446 0-3.411-1.643-4.571-2.446-2.768-1.946-5.571-3.875-8.339-5.804-1.268-0.857-3.071-2.875-3.071-4.5 0-1.75 0.946-3.25 2.857-3.25h26.286c1.554 0 2.857 1.286 2.857 2.857z "></path></svg>');
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.contact-area1 {
+    text-align: center;
+    padding: 0 0.25em 2em 0.25em;
+    margin: 0 auto;
+    border-top: solid 1px;
+}
+
+.contact-svg {
+    width: 2em;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.contact-area2 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 0 2em 1em;
+    border-top: solid 1px;
+}
+
+.contactform {
+    width: 75%;
+    max-width: 50em;
+    margin: 0;
+    font-size: 1em;
+}
+
+form button {
+    color: gray;
+    font-weight: bold;
+    background: #ffffff;
+    display: block;
+    height: 3em;
+    margin: 0 auto;
+    border-radius: 2em;
+    box-shadow: 10px 10px 5px grey;
+    font-size: 1em
+}
+
+/* FOOTER */
+
+.footer-wrap {
+    text-align: center;
+    display: inline-block;
+    height: 4.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-box {
+    float: left;
+    width: 33%;
+    margin: auto;
+    font-size: 0.6em;
+}
+
+.footer-box svg {
+    width: 1.2em;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.footer-box img {
+    margin-top: 2%;
+}
+
+
+/* MEDIA QUERIES FOR FLEX SUPPORT*/
+
+@supports (display: flex) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .grid:last-child {
+        padding-bottom: 1em;
+    }
+    .grid-item {
+        flex: 1 1 20em;
+        max-width: 35em;
+        width: auto;
+    }
+    .multicon-content-services {
+        height: 8em;
+    }
+    .multicon-body-2col {
+        max-width: 33em;
+    }
+    .multicon-body-3col {
+        max-width: 21em;
+    }
+}
+
+/* MEDIA QUERIES FOR GRID SUPPORT*/
+
+/*@supports (display:grid) {
+     .grid {
+         text-align: center;
+         display: grid;
+         grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+         grid-gap: 0.5em;
+         margin: initial;
+     }
+
+     .grid-item {
+         padding: initial;
+         max-width: none;
+     }
+ }
+*/
+
+/* MEDIA QUERIES FOR SCREEN WIDTH*/
+
+@media screen and (min-width: 100px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar a {
+        margin-right: 0.5em;
+    }
+}
+
+@media screen and (min-width: 401px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar a {
+        margin-right: 1em;
+    }
+}
+
+@media screen and (min-width: 721px) {
+    body {
+        font-size: 16px;
+    }
+    .header img {
+        position: relative;
+        display: inline;
+        visibility: visible;
+    }
+    .navbar i {
+        position: relative;
+        display: inline;
+        visibility: visible;
+    }
+    .navbar a {
+        margin-right: 2.0em;
+    }
+    .homepage-extra {
+        width: 16.5%;
+        height: 100%;
+        float: left;
+    }
+    .homepage-extra img {
+        width: 100%;
+        margin: 3.5em auto;
+        position: relative;
+        display: inline;
+        visibility: visible;
+    }
+    .homepage-fallback {
+        width: 55%;
+        height: 100%;
+        margin: 2.5em;
+        float: left;
+    }
+}
+
+@media screen and (min-width: 1081px) {
+    body {
+        font-size: 18px;
+    }
+    .navbar a {
+        margin-right: 2.5em;
+    }
+    .homepage-extra {
+        width: 25%;
+    }
+    .homepage-extra img {
+        width: 70%;
+    }
+    .homepage-fallback {
+        width: 40%;
+    }
+}
