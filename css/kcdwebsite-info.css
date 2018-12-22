@@ -64,12 +64,14 @@ li:first-child {
 
 .info-left-svg {
     width: 3.5em;
+    height:3.5em;
     stroke: currentColor;
     fill: currentColor;
 }
 
 .info-mid-svg {
     width: 3em;
+    height:3.5em;
     margin-top: 0.1em;
     stroke: currentColor;
     fill: currentColor;
