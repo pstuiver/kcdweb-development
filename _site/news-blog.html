@@ -2,21 +2,32 @@
 <html lang="en">
 
 <head>
-    <title>KidzCanDurban-News Blog</title>
+    <title>KidzCanDurban-Blog</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="Fontawesome/css/all.css" rel="stylesheet">
-    <link href="css/kcdwebsite.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link href="css/kcdwebsite-info-min.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="dynafont">
-    <div class="infoheader whitetext-bluebg" href="#" onClick="history.go(-1)">
-        <p class="lefticon fas fa-arrow-circle-left"></p>
-        <p class="description">Blog</p>
-        <p class="midicon fab fa-blogger-b"></p>
-
+<body>
+    <div class="info-header white-text-blue-bg">
+        <a href="javascript:history.go(-1)">
+            <svg class="info-left-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                <title>Back arrow icon</title>
+                <path d="M13,24 23,13 23,20 34,20 34,28 23,28 23,35Z"></path>
+                <circle stroke-width="5" fill="none" cx="24" cy="24" r="18"></circle>
+            </svg>
+        </a>
+        <svg class="info-mid-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+            <title>Blogger icon</title>
+            <path d="M24,8 H18 c-6 0 -10 4 -10 10 v12 c0 6 4 10 10 10 h12 c6 0 10 -4 10 -10 v-8 c0 -1.2 -.9 -2 -2 -2 H36 c-1 0 -2 -1 -2 -2 0 -5 -4 -10 -10 -10z m6,24 H18 c-1 0 -2 -1 -2 -2 s1 -2 2 -2 h12 c1 0 2 1 2 2 s-1 2 -2 2z m-5,-16 c1 0 2 1 2 2 s-1 2 -2 2 h-7 c-1 0 -2 -1 -2 -2 s1 -2 2 -2 h7z"></path>
+        </svg>
+        <p class="info-header-title">KidzCanDurban Blog</p>
     </div>
-    <iframe class="infocontent bluetext-whitebg" id="blog" max-width="1240px" width="100%" frameborder="0" height="1000" src="http://kidzcandurban.blogspot.com"></iframe>
+
+    <iframe class="info-iframe-news" src="https://kidzcandurban.blogspot.com">
+    </iframe>
+
 </body>
 
 </html>
