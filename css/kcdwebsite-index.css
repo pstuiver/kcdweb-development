@@ -28,6 +28,7 @@ main {
 }
 
 .grid-item {
+    height: auto;
     padding: 1em
 }
 
