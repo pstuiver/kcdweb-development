@@ -28,7 +28,6 @@ main {
 }
 
 .grid-item {
-    height: auto;
     padding: 1em
 }
 
@@ -206,7 +205,7 @@ li:first-child {
     border-width: 2px;
     border-radius: 2em;
     max-width: 35em;
-    height: 100%
+    
 }
 
 .multicon-logo {
