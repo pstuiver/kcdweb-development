@@ -253,10 +253,10 @@ li:first-child {
 .multicon-readmore-outer {
     position: absolute;
     left: 50%;
-    bottom: 1.5em;
+    bottom: 0.25em;
 }
 
-.multicon-readmore{
+.multicon-readmore {
     position: relative;
     left: -50%;
     height: 1.5em;
