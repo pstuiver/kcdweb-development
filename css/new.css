@@ -1,0 +1,18 @@
+
+
+.multicon-readmore-outer {
+    position: absolute;
+    left: 50%;
+    bottom: 0.25em;
+}
+
+.multicon-readmore-inner {
+    position: relative;
+    left: -50%;
+    height: 1.5em;
+    width: 8em;
+    margin: 1.25em auto .5em auto;
+    padding: .75em;
+    text-align: center;
+    border-radius: 2em
+}
