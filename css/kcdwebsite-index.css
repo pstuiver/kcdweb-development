@@ -20,6 +20,9 @@ main {
     margin: 1em 0 0 0;
     padding: 5.25em 0 0 0
 }
+.grid {
+    display: flex;
+}
 
 .grid:last-child {
     padding-bottom: 1em
@@ -202,8 +205,8 @@ li:first-child {
     border-style: solid;
     border-width: 2px;
     border-radius: 2em;
-    max-width: 35em;
-    height: 100%
+    max-width: 35em;  
+    height:100%
 }
 
 .multicon-logo {
@@ -359,13 +362,13 @@ form button {
     }
 
     .grid:last-child {
-        align-content: stretch;
         padding-bottom: 1em
     }
 
     .grid-item {
         flex: 1 1 20em;
         max-width: 35em;
+        height:unset;
         width: auto
     }
 
@@ -374,7 +377,7 @@ form button {
     }
 
     .multicon-body-2col {
-        height: ;
+       
         max-width: 33em
     }
 
