@@ -1,0 +1,360 @@
+// START OF normalizev8.01.css
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0
+}
+
+main {
+    display: block
+}
+
+h1 {
+    font-size: 2rem;
+    margin: .67rem 0
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1rem
+}
+
+a {
+    background-color: transparent
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted
+}
+
+b,
+strong {
+    font-weight: bolder
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1rem
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25rem
+}
+
+sup {
+    top: -.5rem
+}
+
+img {
+    border-style: none
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.15;
+    margin: 0
+}
+
+button,
+input {
+    overflow: visible
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText
+}
+
+fieldset {
+    padding: .35rem .75rem .625rem
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal
+}
+
+progress {
+    vertical-align: baseline
+}
+
+textarea {
+    overflow: auto
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details {
+    display: block
+}
+
+summary {
+    display: list-item
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}
+
+// END OF normalizev8.01.css
+
+// START OF MY SASS VARIABLES
+$font-family: -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+"Roboto",
+"Helvetica Neue",
+"Arial",
+"Noto Sans",
+"Verdana",
+sans-serif;
+
+$maxwidth: 80rem;
+$framewidth: 82.5rem;
+$textwidth: 82.5rem;
+
+$palette-d:rgb(0, 0, 139);
+$palette-n: rgb(0, 62, 249);
+$palette-l:rgb(239, 247, 255);
+
+$black-d:rgb(0, 0, 0);
+$black-n:rgba(0, 0, 0, 0.9);
+$black-l:rgba(0, 0, 0, 0.7);
+
+
+$white-l:rgb(255, 255, 255);
+
+$grey-d:rgb(128, 128, 128);
+$grey-n: rgb(181, 181, 181);
+$grey-l: rgb(220, 220, 220);
+
+
+// END OF MY SASS VARIABLES
+body {
+    text-align: left;
+    max-width: $maxwidth;
+    font-family: $font-family;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 0;
+    background-color: $white-l;
+    color: $palette-n;
+}
+
+.blue-text-white-bg {
+    color: $palette-n;
+    background-color: $white-l
+}
+
+.blue-text-liteblue-bg {
+    color: $palette-n;
+    background-color: $palette-l
+}
+
+.white-text-blue-bg {
+    color: $white-l;
+    background-color: $palette-n
+}
+
+.info-header {
+    z-index: 10;
+    max-width: $maxwidth;
+    width: 100%;
+    height: 4.5rem;
+    position: fixed;
+    margin: 0;
+    padding: 0 1.5rem;
+    border-bottom: 2px solid $grey-n;
+    text-align: center;
+
+    a {
+        float: left;
+        margin: 0.5rem 0;
+    }
+
+    .left-svg {
+        width: 3.5rem;
+        height: 3.5rem;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+
+    .mid-svg {
+        width: 3rem;
+        height: 3.5rem;
+        margin-top: -0.1rem;
+        stroke: currentColor;
+        fill: currentColor;
+    }
+
+    .title {
+        text-align: center;
+        font-weight: bold;
+        margin-top: -0.75em;
+    }
+}
+
+.info-content {
+    z-index: 1;
+    max-width: $maxwidth;
+    position: absolute;
+    margin: 4.5rem 0 0 0;
+    border-top: 0;
+    border-right: 0.25rem solid;
+    border-bottom: 0.25rem solid;
+    border-left: 0.25rem solid;
+    border-radius: 0 0 2rem 2rem;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+.text {
+    padding: 0.1rem 1.5rem 0.5rem 1rem;
+}
+
+iframe {
+    z-index: 1;
+    max-width: $framewidth;
+    padding:1.25rem;
+
+}
+
+#w4icon {
+    width: 9rem;
+    height: 3rem;
+    margin-top: 0.1rem;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+#home {
+    position: absolute;
+    top: -5.25rem;
+}
+
+img {
+    border-radius: 1rem
+}
+
+a,
+a:visited,
+svg:visited {
+    color: inherit;
+    font-weight: normal;
+    stroke: currentColor;
+    fill: currentColor;
+    text-decoration: none
+}
+
+.a-deco {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: underline
+}
+
+ul {
+    padding: 0 0 0 1.5rem;
+
+    li:first-child {
+        margin-top: -0.75rem;
+    }
+}
+
+/* MEDIA QUERIES FOR SCREEN WIDTH*/
+@media screen and (min-width: 44rem) {
+    body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 62rem) {
+    body {
+        font-size: 1.125rem;
+    }
+}
