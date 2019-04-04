@@ -443,7 +443,7 @@ ul li:first-child {
 }
 
 .two-col {
-    max-width: 400px;
+    max-width: 500px;
 
     .text {
         text-align: left;
@@ -548,7 +548,7 @@ ul li:first-child {
 
 .formtext {
     font-size: 0.75rem;
-    width: 80%;
+    width: 94%;
 }
 
 .form-btn {
@@ -677,10 +677,8 @@ ul li:first-child {
             }
         }
     }
-
     .two-col {
-        min-width: 360px;
-        max-width: 490px;
+        max-width: 350px;
     }
 }
 
@@ -722,9 +720,13 @@ ul li:first-child {
             .extra-img-6 {
                 margin-top: 20%;
             }
-        }
+        }  
+    }
+    .two-col {
+        max-width: 470px;
     }
 }
+
 
 // Fallback grid for non-flexbox browsers
 @supports not (display: flex) {
