@@ -247,7 +247,6 @@ ul li:first-child {
     fill: currentColor;
     border-bottom: 2px solid #b5b5b5; }
     .header .navbar a {
-      padding: auto;
       margin: 0 0.25rem; }
     .header .navbar svg {
       width: 1.5rem;
@@ -260,7 +259,7 @@ ul li:first-child {
   margin: auto;
   text-align: center; }
   .homepage .fallback {
-    widows: 95%;
+    width: 95%;
     display: inline-block; }
     .homepage .fallback div,
     .homepage .fallback img {
