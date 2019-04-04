@@ -677,6 +677,7 @@ ul li:first-child {
             }
         }
     }
+
     .two-col {
         max-width: 350px;
     }
@@ -720,26 +721,27 @@ ul li:first-child {
             .extra-img-6 {
                 margin-top: 20%;
             }
-        }  
+        }
     }
+
     .two-col {
         max-width: 470px;
     }
 }
 
 
-// Fallback grid for non-flexbox browsers
+// Fallback grid for non-flexbox browsers, rem to em
 @supports not (display: flex) {
 
     .grid {
-        padding: 3rem;
+        padding: 3em;
     }
 
     .grid-item {
-        margin: 1rem auto;
-        padding: 1rem;
+        margin: 1em auto;
+        padding: rem;
         border-style: solid;
-        border-radius: 2rem;
+        border-radius: rem;
     }
 
     .readmore {
@@ -751,6 +753,34 @@ ul li:first-child {
     }
 
     .three-col {
-        max-width: 18rem;
+        max-width: 18em;
+    }
+}
+
+// IE10 and IE11 detection
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    .grid {
+        padding: 3em;
+    }
+
+    .grid-item {
+        display: block;
+        margin: 1em auto;
+        padding: 1em;
+        border-style: solid;
+        border-radius: 2em;
+    }
+
+    .readmore {
+        margin: 0 auto 0 auto;
+    }
+
+    .two-col {
+        width: 96%;
+    }
+
+    .three-col {
+        max-width: 18em;
     }
 }
