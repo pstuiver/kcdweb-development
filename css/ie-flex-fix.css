@@ -1,0 +1,23 @@
+.grid {
+    padding: 3em;
+}
+
+.grid-item {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    border-style: solid;
+    border-radius: 2em;
+}
+
+.readmore {
+    margin: 0 auto 0 auto;
+}
+
+.two-col {
+    width: 96%;
+}
+
+.three-col {
+    max-width: 18em;
+}
