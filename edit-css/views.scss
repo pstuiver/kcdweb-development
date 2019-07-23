@@ -217,7 +217,7 @@ body {
     text-align: left;
     max-width: $maxwidth;
     font-family: $font-family;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 1.5;
     margin: 0 auto;
     padding: 0;
@@ -302,7 +302,6 @@ iframe {
     z-index: 1;
     max-width: $framewidth;
     padding:1.25rem;
-
 }
 
 #w4icon {
@@ -347,13 +346,19 @@ ul {
 }
 
 /* MEDIA QUERIES FOR SCREEN WIDTH*/
-@media screen and (min-width: 44rem) {
+@media screen and (min-width: 420px) {
     body {
-        font-size: 1rem;
+        font-size: 0.875rem;
     }
 }
 
-@media screen and (min-width: 62rem) {
+@media screen and (min-width: 780px) {
+    body {
+        font-size: 0.875rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
     body {
         font-size: 1.125rem;
     }
